@@ -1,0 +1,12 @@
+version: '3'
+services:
+
+  rust-env:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: rust-env
+    volumes:
+      - ./src:/project
+    tty: true
+
